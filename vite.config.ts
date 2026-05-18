@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // 🚀 User repository (adilhassan85.github.io) ke liye single slash hi perfect standard hai
+  base: '/adilhassan85.github.io/', // 🚀 Exact repository name slash ke sath taaki assets sahi load hon!
 })
