@@ -7,7 +7,6 @@ export let smoother: any = null;
 
 const Navbar = () => {
   useEffect(() => {
-    // 🚀 CRASH FIX: Finding all menu links and applying native smooth scroll
     const links = document.querySelectorAll(".header ul a, .navbar-logo");
 
     const handleScrollClick = (e: Event) => {
@@ -19,7 +18,6 @@ const Navbar = () => {
         const targetSection = document.querySelector(sectionId);
 
         if (targetSection) {
-          // Native browser smooth scrolling (100% crash proof)
           targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
@@ -29,7 +27,6 @@ const Navbar = () => {
       elem.addEventListener("click", handleScrollClick);
     });
 
-    // Cleanup listeners on unmount
     return () => {
       links.forEach((elem) => {
         elem.removeEventListener("click", handleScrollClick);
@@ -40,21 +37,14 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        {/* Logo Text */}
         <a href="#landingDiv" data-href="#landingDiv" className="navbar-title" data-cursor="disable">
           Adil Hasan
         </a>
 
-        {/* Email Link */}
-        <a
-          href="mailto:juttzada517@gmail.com"
-          className="navbar-connect"
-          data-cursor="disable"
-        >
+        <a href="mailto:juttzada517@gmail.com" className="navbar-connect" data-cursor="disable">
           juttzada517@gmail.com
         </a>
 
-        {/* Navigation Menu */}
         <ul>
           <li>
             <a data-href="#about" href="#about">
