@@ -1,6 +1,5 @@
 import { Environment } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
   BallCollider,
   CylinderCollider,
@@ -12,16 +11,22 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 
 const textureLoader = new THREE.TextureLoader();
-const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+
+const imageNames = [
+  "react2.webp",
+  "next2.webp",
+  "node2.webp",
+  "express.webp",
+  "mongo.webp",
+  "mysql.webp",
+  "typescript.webp",
+  "javascript.webp",
 ];
+
+// ✅ FIXED: Uses Vite's BASE_URL so paths work correctly on GitHub Pages subpath
+const imageUrls = imageNames.map(
+  (name) => `${import.meta.env.BASE_URL}images/${name}`
+);
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
@@ -200,12 +205,7 @@ const TechStack = () => {
           ))}
         </Physics>
 
-        {/* ✅ FIXED: Corrupt HDR file link removed and replaced with safe studio lighting preset */}
         <Environment preset="studio" environmentIntensity={0.6} />
-
-        <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-        </EffectComposer>
       </Canvas>
     </div>
   );

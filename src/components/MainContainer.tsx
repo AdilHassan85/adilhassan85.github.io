@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import About from "./About";
+import Blog from "./Blog";
 import Career from "./Career";
 import Contact from "./Contact";
 import Cursor from "./Cursor";
@@ -52,6 +53,7 @@ const MainContainer = ({ children }: MainContainerProps) => {
                 <TechStack />
               </Suspense>
             )}
+            <Blog />
             <Contact />
           </div>
         </div>
