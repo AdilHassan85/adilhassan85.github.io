@@ -8,26 +8,54 @@
   height: auto;
   width: var(--cWidth);
   margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .about-me {
   padding: 50px 0px;
   padding-bottom: 0;
-  width: 500px;
+  width: 700px;
   max-width: calc(100% - 15px);
 }
-.about-me h3 {
+
+.about-me h3.title {
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 7px;
   font-weight: 400;
   color: var(--accentColor);
+  margin-bottom: 25px;
 }
 
-.about-me p {
-  font-size: 33px;
+.about-me h4.sub-heading {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+  color: var(--accentColor);
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.about-me p.para {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  color: #d5d5d5;
+  margin: 0;
+}
+
+.about-me p.intro {
+  font-size: 19px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.about-me p.para strong {
+  font-weight: 600;
+  color: var(--accentColor);
 }
 
 @media only screen and (min-width: 600px) {
@@ -35,37 +63,52 @@
     justify-content: center;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .about-me {
-    width: 500px;
+    width: 700px;
     max-width: calc(100% - 70px);
     transform: translateY(0%);
   }
+
   .about-section {
     opacity: 1;
   }
 }
+
 @media only screen and (min-width: 1025px) {
   .about-section {
     width: var(--cWidth);
     justify-content: right;
     max-width: 1920px;
-    height: var(--vh);
-    padding: 0px;
+    height: auto;
+    min-height: var(--vh);
+    padding: 60px 0px;
     opacity: 1;
   }
+
   .about-me {
     padding: 0px;
-    width: 50%;
+    width: 55%;
   }
-  .about-me p {
-    font-size: 1.9vw;
-    line-height: 2.3vw;
+
+  .about-me p.para {
+    font-size: 1.05vw;
+    line-height: 1.8;
+  }
+
+  .about-me p.intro {
+    font-size: 1.2vw;
   }
 }
+
 @media only screen and (min-width: 1950px) {
-  .about-me p {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
+  .about-me p.para {
+    font-size: 1.3rem;
+    line-height: 1.9;
+  }
+
+  .about-me p.intro {
+    font-size: 1.5rem;
   }
 }
