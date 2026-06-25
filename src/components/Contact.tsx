@@ -25,42 +25,16 @@ const Contact = () => {
 
           <div className="contact-box">
             <h4>Social</h4>
-            {/* 🛠️ Yahan 'https://github.com/apna-username' ki jagah apna exact URL dal sakte hain */}
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://github.com" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               Github <MdArrowOutward />
             </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://www.linkedin.com/in/adil-hassan-429616418/" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://x.com" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               Twitter <MdArrowOutward />
             </a>
-            {/* 🛠️ Instagram ka actual handle setup */}
-            <a
-              href="https://www.instagram.com/adil_hassan"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
+            <a href="https://www.instagram.com/rao_x_adi?igsh=MW9hY2RpNzFoYnAyYg==" target="_blank" rel="noreferrer" data-cursor="disable" className="contact-social">
               Instagram <MdArrowOutward />
             </a>
           </div>
