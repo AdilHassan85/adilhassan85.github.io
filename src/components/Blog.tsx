@@ -30,7 +30,7 @@ const blogPosts: BlogPost[] = [
         id: 2,
         title: "My Digital Notebook: Taming Python on Day One",
         date: "November 2025",
-        tags: ["Python", "First Day", "Impostor Syndrome", "Dr. Bilal", "LABS Related"],
+        tags: ["#Dr. Bilal", "First Day", "Impostor Syndrome", "Python", "LABS Related"],
         summary:
             "Walking into my very first Python class, I had no idea a single word on a projector screen would completely shake my confidence. This is the story of my first terrifying brush with programming.",
         content:

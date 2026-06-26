@@ -1,0 +1,198 @@
+.terminal-screen {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #060608;
+    z-index: 999999998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity 0.9s ease, filter 0.9s ease;
+}
+
+.terminal-dissolve {
+    opacity: 0;
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.terminal-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.terminal-box {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 640px;
+    padding: 30px 35px;
+    border: 1px solid rgba(170, 130, 255, 0.25);
+    border-radius: 10px;
+    background-color: rgba(10, 10, 14, 0.65);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 60px rgba(170, 130, 255, 0.1);
+    font-family: "Courier New", monospace;
+    min-height: 220px;
+}
+
+.terminal-line {
+    color: #d8d8e0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.terminal-prompt {
+    color: var(--accentColor, #a87cff);
+    font-weight: 700;
+}
+
+.terminal-question {
+    color: #d8d8e0;
+}
+
+.terminal-cursor {
+    color: var(--accentColor, #a87cff);
+    animation: terminalBlink 1s step-end infinite;
+    font-weight: 700;
+}
+
+@keyframes terminalBlink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.letter-fade-text span {
+    display: inline-block;
+    animation: letterPop 0.35s ease forwards;
+    opacity: 0;
+    transform: translateY(4px);
+}
+
+@keyframes letterPop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-line .letter-fade-text span,
+.welcome-text span {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--accentColor, #a87cff);
+    text-shadow: 0 0 14px rgba(170, 130, 255, 0.5);
+}
+
+.sub-message {
+    margin-top: 4px;
+}
+
+.sub-message .letter-fade-text span {
+    color: #b9b9c4;
+    font-style: italic;
+}
+
+.terminal-name-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.terminal-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(170, 130, 255, 0.4);
+    background-color: rgba(170, 130, 255, 0.06);
+    animation: inputAppear 0.5s ease forwards, inputGlow 2.4s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes inputAppear {
+    0% {
+        transform: scale(0.85) translateY(8px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.03) translateY(-2px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes inputGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 8px rgba(170, 130, 255, 0.15);
+        border-color: rgba(170, 130, 255, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(170, 130, 255, 0.45);
+        border-color: rgba(170, 130, 255, 0.8);
+    }
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--accentColor, #a87cff);
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 80px;
+    caret-color: transparent;
+}
+
+.terminal-input::placeholder {
+    color: rgba(216, 216, 224, 0.35);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .terminal-box {
+        padding: 22px 20px;
+    }
+
+    .terminal-line {
+        font-size: 14px;
+    }
+
+    .terminal-input {
+        font-size: 15px;
+    }
+
+    .welcome-line .letter-fade-text span,
+    .welcome-text span {
+        font-size: 16px;
+    }
+}
