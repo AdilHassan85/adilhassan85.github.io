@@ -37,31 +37,31 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="#landingDiv" data-href="#landingDiv" className="navbar-title" data-cursor="disable">
+        <a href="#landingDiv" data-href="#landingDiv" className="navbar-title swing-item" data-cursor="disable">
           Adil Hasan
         </a>
 
-        <a href="mailto:juttzada517@gmail.com" className="navbar-connect" data-cursor="disable">
+        <a href="mailto:juttzada517@gmail.com" className="navbar-connect swing-item" data-cursor="disable">
           juttzada517@gmail.com
         </a>
 
         <ul>
-          <li>
+          <li className="swing-item">
             <a data-href="#about" href="#about">
               <HoverLinks text="ABOUT" />
             </a>
           </li>
-          <li>
+          <li className="swing-item">
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
             </a>
           </li>
-          <li>
+          <li className="swing-item">
             <a data-href="#blog" href="#blog">
               <HoverLinks text="BLOG" />
             </a>
           </li>
-          <li>
+          <li className="swing-item">
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
             </a>

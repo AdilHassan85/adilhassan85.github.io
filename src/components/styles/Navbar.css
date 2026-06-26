@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: center;
   max-width: var(--cMaxWidth);
   width: var(--cWidth);
   justify-content: space-between;
@@ -12,6 +13,7 @@
   top: 0;
   z-index: 9999;
 }
+
 .header ul {
   font-size: 12px;
   display: flex;
@@ -23,6 +25,7 @@
   row-gap: 8px;
   align-items: end;
 }
+
 .header ul li {
   margin-left: 0px;
   letter-spacing: 1px;
@@ -30,54 +33,120 @@
   font-weight: 600;
   cursor: pointer;
 }
+
 .navbar-connect {
-  position: absolute;
   display: none;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 500;
+  white-space: nowrap;
 }
+
 .navbar-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+  white-space: nowrap;
 }
+
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;
   }
+
   .header ul {
     flex-direction: row;
     align-items: center;
     font-size: 14px;
   }
+
   .header ul li {
     color: #eae5ec;
   }
+
   .navbar-title {
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 900px) {
+
+@media only screen and (min-width: 1200px) {
   .navbar-connect {
     display: block;
   }
-}
-@media only screen and (min-width: 1200px) {
+
   .header {
     padding: 35px 0px;
   }
+
   .header ul {
     column-gap: 80px;
     font-size: 16px;
   }
+
   .navbar-connect {
     font-size: 16px;
   }
+
   .navbar-title {
     font-size: 18px;
+  }
+}
+
+/* 🪧 Hanging sign swing animation */
+.swing-item {
+  display: inline-block;
+  transform-origin: top center;
+  animation: swingSign 3.2s ease-in-out infinite;
+}
+
+.navbar-title.swing-item {
+  animation-delay: 0s;
+}
+
+.navbar-connect.swing-item {
+  animation-delay: 0.3s;
+}
+
+.header ul li.swing-item:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.header ul li.swing-item:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.header ul li.swing-item:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.header ul li.swing-item:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes swingSign {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swing-item {
+    animation: none;
   }
 }

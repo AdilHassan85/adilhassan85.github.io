@@ -16,36 +16,48 @@ const WhatIDo = () => {
         {/* Right Side Skills List */}
         <div className="whatido-right" style={{ flex: "2", display: "flex", flexDirection: "column", gap: "3rem" }}>
 
-          {/* Skill 1 - C# */}
+          {/* 1 - Computer Engineering Foundation */}
           <div className="service-box" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1.5rem" }}>
             <h4 style={{ fontSize: "1.6rem", color: "#fff", marginBottom: "0.5rem" }}>
-              Application Development (C#) <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
+              Computer Engineering Foundation <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
             </h4>
             <p style={{ color: "rgba(255,255,255,0.6)", lineHeight: "1.6" }}>
-              Building structured desktop software using Object-Oriented Programming (OOP) principles.
-              Focusing on clean logic and UI layouts.
+              I am currently pursuing a Bachelor of Science in Computer Engineering at the University
+              of Engineering and Technology (UET) Lahore, bridging the gap between advanced hardware
+              architectures and high-performance software systems. My coursework covers relational
+              database design, data pipelines, and systems programming, giving me a methodical
+              approach to troubleshooting system bottlenecks and optimizing complex logic from the
+              silicon level up to the application layer.
             </p>
           </div>
 
-          {/* Skill 2 - DBMS */}
+          {/* 2 - AI-to-AI Economy Frameworks */}
           <div className="service-box" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1.5rem" }}>
             <h4 style={{ fontSize: "1.6rem", color: "#fff", marginBottom: "0.5rem" }}>
-              Database Design & SQL (DBMS) <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
+              AI-to-AI Economy Frameworks <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
             </h4>
             <p style={{ color: "rgba(255,255,255,0.6)", lineHeight: "1.6" }}>
-              Designing relational schemas, writing optimized SQL queries, and handling data
-              normalization (1NF, 2NF, 3NF) to eliminate redundancy.
+              Beyond traditional software, I focus on the infrastructure supporting the emerging
+              autonomous AI-to-AI economy — exploring how independent, multi-agent AI systems can
+              interact, communicate, and transact securely without human intervention. I research
+              decentralized protocols, efficient data streaming, and robust backend pipelines, aiming
+              to build self-validating data environments capable of handling high-throughput agent
+              interactions for next-generation intelligent network pipelines.
             </p>
           </div>
 
-          {/* Skill 3 - Python */}
+          {/* 3 - Quantum Computing Architectures */}
           <div className="service-box" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "1.5rem" }}>
             <h4 style={{ fontSize: "1.6rem", color: "#fff", marginBottom: "0.5rem" }}>
-              Python Scripting & Logic <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
+              Quantum Computing Architectures <MdArrowOutward style={{ fontSize: "1.2rem", color: "#a29bfe", marginLeft: "0.5rem" }} />
             </h4>
             <p style={{ color: "rgba(255,255,255,0.6)", lineHeight: "1.6" }}>
-              Writing scripts in Python for data management and custom dataset processing, while exploring
-              Digital Logic Design (DLD) configurations.
+              I am deeply invested in researching theoretical and practical implementations within
+              Quantum Computing — investigating quantum algorithms, scalable error correction
+              protocols, and hardware-software interfaces. This demands a deep conceptual shift from
+              classical binary logic gates to multi-dimensional probability vectors. By combining my
+              computer engineering background with advanced computational theory, I work toward
+              modeling robust sub-systems for future quantum-accelerated platforms.
             </p>
           </div>
 
