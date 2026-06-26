@@ -16,6 +16,21 @@
     color: var(--accentColor);
 }
 
+.blog-section-group {
+    margin-bottom: 60px;
+}
+
+.blog-section-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--accentColor);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 25px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accentColor);
+}
+
 .blog-list {
     display: flex;
     flex-direction: column;
@@ -127,6 +142,10 @@
 @media only screen and (max-width: 900px) {
     .blog-heading {
         font-size: 40px;
+    }
+
+    .blog-section-title {
+        font-size: 22px;
     }
 
     .blog-card-header h3 {
