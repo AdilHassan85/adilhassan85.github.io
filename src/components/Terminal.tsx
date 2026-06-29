@@ -11,13 +11,13 @@ const LINES = [
     "Built   under   the  mentorship  of  Dr. Bilal Ahmad.",
 ];
 
-// Saari balls ka base color ab dark purple shades (portfolio accent theme se match)
+// Saari balls ka base color ab gold/copper shades (portfolio accent theme se match)
 const BASE_COLORS = [
-    { r: 124, g: 58, b: 200 },  // deep purple
-    { r: 147, g: 76, b: 222 },  // medium purple
-    { r: 99, g: 44, b: 175 },   // darker purple
-    { r: 168, g: 100, b: 240 }, // bright accent purple
-    { r: 86, g: 38, b: 160 },   // deepest purple
+    { r: 212, g: 175, b: 55 },   // luxury gold
+    { r: 184, g: 115, b: 51 },   // burnt copper
+    { r: 232, g: 199, b: 102 },  // light gold
+    { r: 160, g: 90, b: 30 },    // deep copper
+    { r: 240, g: 215, b: 138 },  // pale gold
 ];
 
 interface Ball {
