@@ -6,9 +6,9 @@ interface TerminalProps {
 }
 
 const LINES = [
-    "Initializing portfolio...",
-    "Hi, I'm Adil Hasan's digital guide.",
-    "Built under the mentorship of Dr. Bilal Ahmad.",
+    "Initializing  portfolio...",
+    "Hi,  I'm  Adil Hasan's  digital  guide.",
+    "Built   under   the  mentorship  of  Dr. Bilal Ahmad.",
 ];
 
 // Saari balls ka base color ab dark purple shades (portfolio accent theme se match)
